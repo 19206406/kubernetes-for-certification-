@@ -1,0 +1,38 @@
+--2026-03-12 10:03:10--  http://mira/
+Resolving mira (mira)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘mira’
+--2026-03-12 10:03:20--  http://tengo/
+Resolving tengo (tengo)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘tengo’
+--2026-03-12 10:03:30--  http://el/
+Resolving el (el)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘el’
+--2026-03-12 10:03:40--  http://siguiente/
+Resolving siguiente (siguiente)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘siguiente’
+--2026-03-12 10:03:49--  http://error/
+Resolving error (error)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘error’
+--2026-03-12 10:03:59--  http://al/
+Resolving al (al)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘al’
+--2026-03-12 10:04:09--  http://ejecutar/
+Resolving ejecutar (ejecutar)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘ejecutar’
+--2026-03-12 10:04:18--  http://el/
+Resolving el (el)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘el’
+--2026-03-12 10:04:28--  ftp://wget/
+           => ‘.listing’
+Resolving wget (wget)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘wget’
+--2026-03-12 10:04:38--  http://ps/
+Resolving ps (ps)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘ps’
+--2026-03-12 10:04:47--  ftp://c/UsersurregDesktopProgramin
+           => ‘UsersurregDesktopProgramin’
+Resolving c (c)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘c’
+--2026-03-12 10:04:57--  http://learningkubernetesday-9task/
+Resolving learningkubernetesday-9task (learningkubernetesday-9task)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘learningkubernetesday-9task’

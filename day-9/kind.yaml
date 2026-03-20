@@ -1,0 +1,11 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+  extraPortMappings: 
+  - containerPort: 30001
+    hostPort: 30001
+- role: worker
+- role: worker
+
+# esto es una manera de exponer un puerto para que hay una comunicación con la aplicación

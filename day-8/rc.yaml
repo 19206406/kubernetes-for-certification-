@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: nginx-deploy
+  labels: 
+    env: demo
+spec:
+  template:  # configuración para la plantilla del pod 
+    metadata:
+      labels:
+        env: demo
+      name: nginx
+    spec:
+      containers:
+      - image: nginx 
+        name: nginx
+  replicas: 3 # numero de replicas que queremos
+  selector:
+    matchLabels: 
+      env: demo 
