@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod 
+metadata: 
+  name: mypod 
+  labels: 
+    name: mypod-task 
+spec: 
+  containers:
+  - name: mypod-container 
+    image: busybox:1.28 
+    command: ['sh', '-c', 'echo este contenedor esta corriendo y duerme cada 3 segundos']
+    env: 
+    - name: LASTNAME
+      value: "Urrego"
+  initContainers: 
+  - name: init-golang 
+    image: busybox:1.28
+    command: ['sh', '-c']
+    args: ['until nslookup mygolang.default.svc.cluster.local; do echo esperando por el servicio; sleep2; done']
+  - name: init-python
+    image: busybox:1.28
+    command: ['sh', '-c']
+    args: ['until nslookup mypython.default.svc.cluster.local; do echo waiting for myservice; sleep2; done']
