@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: DaemonSet 
+metadata: 
+  name: logs-ds
+  labels: 
+    env: logs
+spec: 
+  template: 
+    metadata: 
+      labels: 
+        env: logs
+      name: busybox 
+    spec: 
+      containers:
+      - image: busybox 
+        name: busybox 
+        ports: 
+        - containerPort: 80
+  selector: 
+    matchLabels:
+      env: logs
