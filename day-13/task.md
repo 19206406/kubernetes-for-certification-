@@ -22,3 +22,24 @@ Also, could you do the port binding at the cluster level if you are using KIND? 
 ## Blog Post Focus 📝
 
 - **Clarity is essential**: Write your blog post clearly and concisely, making it easy for anyone to grasp the concepts, regardless of their prior Kubernetes experience.
+
+
+------------------------------------------------------------------------------------------
+
+## Tarea 13/40
+
+En este ejercicio, explorarás los selectores de nodos, las etiquetas y los selectores, junto con los pods estáticos
+
+> [!NOTA]
+> Si aún no dispones de un clúster de Kubernetes, puedes crear uno local siguiendo el [vídeo del Día 06](https://youtu.be/RORhczcOrWs)
+Además, ¿podrías realizar el enlace de puertos a nivel de clúster si estás utilizando KIND? El vídeo del Día 9 contiene los detalles sobre cómo hacerlo.
+
+### Detalles de la tarea
+- Crea un pod e intenta programarlo manualmente sin el programador.
+- Inicia sesión en el nodo del plano de control, ve al directorio de manifiestos de pods estáticos predeterminados e intenta reiniciar los componentes del plano de control.
+- Crea 3 pods con los nombres pod1, pod2 y pod3 basados en la imagen de nginx y utiliza las etiquetas env:test, env:dev y env:prod para cada uno de estos pods, respectivamente.
+- A continuación, utilizando los comandos de kubectl, filtra los pods que tengan las etiquetas dev y prod.
+
+
+
+
