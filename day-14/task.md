@@ -8,7 +8,7 @@ Also, could you do the port binding at the cluster level if you are using KIND? 
 ### Task details
 - Taint both of your worker nodes as below
 
-   worker01--> gpu=true:NoSchedule , worker02--> gpu=false:NoSchedule
+worker01--> gpu=true:NoSchedule , worker02--> gpu=false:NoSchedule
 - Create a new pod with the image nginx and see why it's not getting scheduled on worker nodes and control plane nodes.
 - Create a toleration on the pod gpu=true:NoSchedule to match with the taint on worker01
 - The pod should be scheduled now on worker01
@@ -26,3 +26,14 @@ Also, could you do the port binding at the cluster level if you are using KIND? 
 ## Blog Post Focus 📝
 
 - **Clarity is essential**: Write your blog post clearly and concisely, making it easy for anyone to grasp the concepts, regardless of their prior Kubernetes experience.
+
+### Detalles de la tarea
+- Aplica una marca de contaminación a tus dos nodos de trabajo como se indica a continuación:
+
+worker01 --> gpu=true:NoSchedule, worker02 --> gpu=false:NoSchedule
+- Crea un nuevo pod con la imagen nginx y comprueba por qué no se programa en los nodos de trabajo ni en los nodos del plano de control.
+- Crea una tolerancia en el pod gpu=true:NoSchedule para que coincida con la marca de taint en worker01
+- El pod debería programarse ahora en worker01
+- Elimina la marca de taint del nodo del plano de control
+- Crea un nuevo pod con la imagen redis; debería programarse en el nodo del plano de control
+- Vuelve a añadir la marca de taint al nodo del plano de control (la que se había eliminado)
