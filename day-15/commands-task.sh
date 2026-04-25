@@ -12,7 +12,7 @@ k apply -f pod.yaml
 # - Comprueba el estado del pod y averigua por qué no se ha programado.
 
 # No se ha programado porque ninguno de los worker 
-# tienen la affinity que se le programo al pod por esta razón 
+# tienen la affinity que se le programo al pod por esta razón      
 # el pod queda como pendiente para programarse 
 
 # TAREA 3 
