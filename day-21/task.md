@@ -11,6 +11,15 @@ In this exercise, you to work with TLS certificates in Kubernetes
 6. Export the issued certificate from the CertificateSigningRequest to a yaml
 7. Redirect the certificate value to learner.crt file after decoding it
 8. Verify the steps one more time, we will use these details in the next task.
+
+1. Genera una clave privada PKI y una CSR, y asígnales los nombres «learner.key» y «learner.csr», respectivamente. listo 
+2. Crea una solicitud de firma de certificado (CSR) para «learner» y establece la fecha de caducidad en 1 semana.
+3. Asegúrate de utilizar el valor codificado de «csr» en el campo de solicitud.
+4. Aprueba la CSR.
+5. Recupera el certificado de la CSR.
+6. Exporta el certificado emitido desde la solicitud de firma de certificado a un archivo YAML.
+7. Redirige el valor del certificado al archivo «learner.crt» tras descodificarlo.
+8. Verifica los pasos una vez más; utilizaremos estos datos en la siguiente tarea.
    
 10. **Share your learnings**: As this is a sub-task, it will be better if you create the blog of day21 and day22 all together.
 11. **Make it public**: Share what you learn publicly on LinkedIn or Twitter.
