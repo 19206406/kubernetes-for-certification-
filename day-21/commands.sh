@@ -25,7 +25,7 @@ k get csr
 k describe csr adam 
 
 # aprovar la firma de un certificado 
-kubectl certificate approve adam
+kubectl certificate approve adam 
 
 # luego podemos compartir el certificado con el usuario para que pueda acceder al cluster
 k get csr adam -o yaml > issuecert.yaml
