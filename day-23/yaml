@@ -1,0 +1,13 @@
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "namespace \"default\" is forbidden: User \"sebastian\" cannot get resource \"namespace/pods\" in API group \"\" at the cluster scope",
+  "reason": "Forbidden",
+  "details": {
+    "name": "default",
+    "kind": "namespace"
+  },
+  "code": 403
+}
